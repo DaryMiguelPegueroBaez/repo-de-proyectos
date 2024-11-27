@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+body {
+    font-family: "Tiny5", sans-serif;
+    background-color: #850F8D;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: white;
+    font-size: 40px;
+} 
+
+.subtitulo {
+    color: gold;
+    font-size: 35px;
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    width: 180px;
+    height: 100px;
+    background: #FF8A08;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 7px solid gold;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.tarjeta-de-mokepon img {
+    width: 70px;
+}
+
+#boton-mascota {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: #FF8A08;
+    border: 5px solid gold;
+    font-family: "Tiny5", sans-serif;
+    margin-top: 15px;
+    color: white;
+}
+
+input {
+    display: none; 
+}
+
+input:checked + label {
+    background: #F27BBD;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background: #FF8A08;
+    padding: 10px;    
+    border-radius: 20px;
+    width: 140px;
+    height: 50px;
+    border: 7px solid gold;
+    color: white;
+    font-family: "Tiny5", sans-serif;
+    margin: 7px;
+    display: inline;
+}
+
+#mensajes {
+    width: 260px;
+    background: #FF8A08;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border: 7px solid gold;
+    color: white;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    border: none;
+    color: white;
+    background: #FF8A08;
+    font-family: "Tiny5", sans-serif;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    display: flex;
+    align-items: center;
+}
+
+.ataques-jugador {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.ataques-enemigo {
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    width: 90px;
+    height: 40px;
+    border: 5px solid gold;
+    background: #FF8A08;
+    border-radius: 20px;
+    color: white;
+    font-family: "Tiny5", sans-serif;
+    margin-top: 15px;
+}
+
+@media (max-width: 360px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+}
