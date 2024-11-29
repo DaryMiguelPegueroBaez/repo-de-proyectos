@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Almacén</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gestión de Almacén</h1>
+    <div id="formulario-producto">
+        <input type="text" id="nombreProducto" placeholder="Nombre del producto">
+        <input type="number" id="cantidadProducto" placeholder="Cantidad">
+        <input type="number" id="precioProducto" placeholder="Precio">
+        <button id="agregarProducto">Agregar Producto</button>
+    </div>
+
+    <h2>Inventario</h2>
+    <table id="tablaProductos">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+<footer>
+    &copy; 2024 Sistema de Gestión de Almacen By: Dev-Dary
+</footer>
+</html>

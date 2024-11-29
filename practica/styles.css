@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 20px;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#formulario-producto {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#formulario-producto input {
+    margin: 5px;
+    padding: 8px;
+}
+
+#formulario-producto button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: burlywood;
+    border: none;
+    cursor: pointer;
+}
+
+#tablaProductos {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tablaProductos th, #tablaProductos td {
+    border: 1px solid burlywood;
+    padding: 8px;
+    text-align: center;
+}
+
+#tablaProductos th {
+    background-color: #80C4E9;
+    color: black;
+}
