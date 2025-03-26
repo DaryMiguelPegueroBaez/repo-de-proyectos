@@ -1,0 +1,258 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.encabezado {
+    text-align: center;
+    background-color: #121212;
+    color: #00FF00; 
+    padding: 25px 0;
+    box-shadow: 0 0px 15px rgba(0, 255, 0, 0.5); 
+}
+
+.encabezado h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.encabezado h4 {
+    margin: 5px 0 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+
+.description {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #121212; 
+    border-radius: 2.5px;
+    box-shadow: 0 0px 15px rgba(255, 0, 255, 0.5); 
+    color: #e0e0e0;
+}
+
+.description p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+
+.skills {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #121212; 
+    border-radius: 2.5px;
+    box-shadow: 0 0px 15px rgba(0, 255, 255, 0.5); 
+    transition: transform 0.3s ease;
+}
+
+.skills h2 {
+    color: #00FFFF;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.skill {
+    background-color: #121212; 
+    color: #FF00FF;
+    padding: 12px 25px;
+    border-radius: 2.5px;
+    font-size: 1.2rem;
+    text-align: center;
+    box-shadow: 0 0px 15px rgba(255, 0, 255, 0.3); 
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.skill:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+.skills:hover {
+    transform: scale(1.05);
+}
+
+.social-media {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #121212; 
+    border-radius: 2.5px;
+    box-shadow: 0 0px 15px rgba(255, 0, 255, 0.5); 
+}
+
+.social-media h2 {
+    color: #FF00FF; 
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icons img.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #FF00FF; 
+}
+
+.social-icons a:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+
+footer {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #121212; 
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #FF00FF;
+    animation: fadeIn 1.8s ease-in-out;
+}
+
+.dowload-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.download-btn {
+    background-color: #00FF00;
+    color: #121212;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 2.5px;
+    box-shadow: 0 0px 15px rgba(0, 255, 0, 0.5);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #00FFFF;
+    transform: scale(1.1);
+}
+
+.reyeno {
+    color: #121212;
+    font-size: 15px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .encabezado h1 {
+        font-size: 2rem;
+    }
+
+    .encabezado h4 {
+        font-size: 1rem;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skill {
+        width: 80%;
+        margin: 5px auto;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(10px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(10px);
+        opacity: 1;
+    }
+}
+
+.encabezado h4 {
+    display: inline-block;
+    animation: bounceIn 0.8s ease-in-out
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+};
+
+.encabezado h1 span {
+    display: inline-block;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+};
+
+.description p span {
+    display: inline-block;
+}
